@@ -1,0 +1,101 @@
+
+.shop-page {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 48px;
+}
+
+.product-card {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+.card-img img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-body {
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.card-body h3 {
+    margin-top: 10px;
+    line-height: 1.5;
+    color: rgb(85, 85, 85);
+}
+
+.card-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.quantity-num {
+    margin-right: 10px;
+    padding: 5px 0;
+    width: 35px;
+    text-align: center;
+    font-size: 1.1rem;
+    border: 2px solid black;
+}
+
+.quantity-num h3 {
+    color: black;
+}
+
+.card-footer a {
+    padding: 5px 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    color: white;
+    background-color: green;
+    border: 2px solid green;
+    text-decoration: none;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.card-footer a:hover {
+    color: green;
+    background-color: transparent;
+    border: 2px solid green;
+}
+
+.add-to-cart-button {
+    padding: 5px;
+    width: 100%;
+    font-size: 1.1rem;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.out-of-stock-button {
+    padding: 5px;
+    width: 100%;
+    font-size: 1.1rem;
+    color: white;
+    background-color: gray;
+    border: 2px solid gray;
+}
+
+.cart-icon {
+    margin-right: 3px;
+    font-size: 1.3rem;
+}
